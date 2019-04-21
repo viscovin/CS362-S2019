@@ -654,7 +654,7 @@ int playAdventurer(int currentPlayer, struct gameState *state, int handPos)
 	int cardDrawn;
 	int temphand[MAX_HAND];// moved above the if statement
 	
-	while(drawntreasure<2){
+	while(drawntreasure<20){ //BUG - should be 2 not 20!!!
 		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
 		}
@@ -684,6 +684,7 @@ int playSmithy(int currentPlayer, struct gameState *state, int handPos)
     for (i = 0; i < 3; i++)
 	{
 		drawCard(currentPlayer, state);
+		i++; //BUG - double incrementing i!!!
 	}
 			
     //discard card from hand
@@ -701,7 +702,7 @@ int playGreathall(int currentPlayer, struct gameState *state, int handPos)
     state->numActions++;
 			
     //discard card from hand
-    discardCard(handPos, currentPlayer, state, 0);
+    discardCard(handPos, currentPlayer, state, 1); //BUG trashflag should be 0!!!
     return 0;
 }
 
@@ -715,7 +716,7 @@ int playVillage(int currentPlayer, struct gameState *state, int handPos)
 	state->numActions = state->numActions + 2;
 			
 	//discard played card from hand
-	discardCard(handPos, currentPlayer, state, 0);
+	//discardCard(handPos, currentPlayer, state, 0);  //BUG - discard shoudl not be commented out!!!!
 	return 0;
 }
 
