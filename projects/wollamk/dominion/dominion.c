@@ -751,7 +751,6 @@ int playRemodel(int currentPlayer, int choice1, int choice2, struct gameState *s
     return 0;
 }
 
-
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
   int i;
@@ -764,6 +763,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
   int tributeRevealedCards[2] = {-1, -1};
   int temphand[MAX_HAND];// moved above the if statement
+
   //int drawntreasure=0;
   //int cardDrawn;
   int cardResult = 0; // int to store return values from card functions
@@ -773,7 +773,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   }
 
 
-	
   //uses switch to select card and perform actions
   switch( card ) 
     {
@@ -781,6 +780,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	
 		cardResult = playAdventurer(currentPlayer, state, handPos);
 		return cardResult;
+
 			
     case council_room:
       //+4 Cards
@@ -898,6 +898,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case remodel:
+
 		cardResult = playRemodel(currentPlayer, choice1, choice2, state, handPos);
 		return cardResult;
 		
@@ -908,6 +909,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case village:
 		cardResult = playVillage(currentPlayer, state, handPos);
 		return cardResult;
+
 		
     case baron:
       state->numBuys++;//Increase buys by 1!
@@ -961,8 +963,10 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case great_hall:
+
 		cardResult = playGreathall(currentPlayer, state, handPos);
 		return cardResult;
+
 		
     case minion:
       //+1 action

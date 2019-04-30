@@ -143,4 +143,5 @@ int playVillage(int currentPlayer, struct gameState *state, int handPos);
 //remodel
 int playRemodel(int currentPlayer, int choice1, int choice2, struct gameState *state, int handPos);
 
+
 #endif
