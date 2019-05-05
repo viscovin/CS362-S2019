@@ -5,10 +5,10 @@ whose turn TEST SUCCESSFULLY COMPLETED.
 +3 Cards TEST FAILED!
 Smithy discarded TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:21.40% of 570
+Branches executed:18.96% of 422
+Taken at least once:14.69% of 422
+Calls executed:14.14% of 99
 Creating 'dominion.c.gcov'
 
 unittest2.c:
@@ -19,10 +19,10 @@ Buys = 1 TEST SUCCESSFULLY COMPLETED.
 Council_room discarded TEST SUCCESSFULLY COMPLETED.
 +1 Card other players TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:23.51% of 570
+Branches executed:20.85% of 422
+Taken at least once:16.59% of 422
+Calls executed:19.19% of 99
 Creating 'dominion.c.gcov'
 
 unittest3.c:
@@ -32,10 +32,10 @@ Actions = 1 TEST SUCCESSFULLY COMPLETED.
 +2 Actions TEST SUCCESSFULLY COMPLETED.
 Village discarded TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:24.91% of 570
+Branches executed:21.33% of 422
+Taken at least once:17.06% of 422
+Calls executed:22.22% of 99
 Creating 'dominion.c.gcov'
 
 unittest4.c:
@@ -46,10 +46,10 @@ Actions = 1 TEST SUCCESSFULLY COMPLETED.
 +1 Point TEST FAILED!
 Great_hall discarded TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:28.60% of 570
+Branches executed:26.07% of 422
+Taken at least once:20.14% of 422
+Calls executed:26.26% of 99
 Creating 'dominion.c.gcov'
 
 cardtest1.c:
@@ -66,10 +66,10 @@ Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
 Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
 Drawn card came from deck TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:28.60% of 570
+Branches executed:26.07% of 422
+Taken at least once:20.14% of 422
+Calls executed:26.26% of 99
 Creating 'dominion.c.gcov'
 
 cardtest2.c:
@@ -78,10 +78,10 @@ cardtest2.c:
 Cards discarded TEST FAILED!
 Adventurer discarded TEST FAILED!
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:31.05% of 570
+Branches executed:27.96% of 422
+Taken at least once:21.56% of 422
+Calls executed:29.29% of 99
 Creating 'dominion.c.gcov'
 
 cardtest3.c:
@@ -91,10 +91,10 @@ cardtest3.c:
 Trash correct cards TEST SUCCESSFULLY COMPLETED.
 Adventurer discarded TEST SUCCESSFULLY COMPLETED.
 File 'dominion.c'
-Lines executed:34.56% of 570
-Branches executed:39.81% of 422
-Taken at least once:24.41% of 422
-Calls executed:38.38% of 99
+Lines executed:32.98% of 570
+Branches executed:32.70% of 422
+Taken at least once:23.46% of 422
+Calls executed:34.34% of 99
 Creating 'dominion.c.gcov'
 
 cardtest4.c:
