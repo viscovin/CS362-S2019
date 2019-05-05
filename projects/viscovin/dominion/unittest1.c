@@ -3,8 +3,7 @@
 	CS-362-400							Assignment-3
 	
 	UNITTEST1.C: Testing Smithy function
---------------------------------------------------------------*/
-			
+--------------------------------------------------------------*/			
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>

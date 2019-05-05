@@ -4,7 +4,6 @@
 	
 	CARDTEST4.C: Testing Salvager function
 --------------------------------------------------------------*/
-			
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>

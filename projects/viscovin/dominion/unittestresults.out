@@ -1,0 +1,121 @@
+Result for running Dominion Unit Tests:
+unittest1.c:
+-------------     Testing smithy()     -------------
+whose turn TEST SUCCESSFULLY COMPLETED.
++3 Cards TEST FAILED!
+Smithy discarded TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+-------------     Testing council_room()     -------------
+Buys = 1 TEST SUCCESSFULLY COMPLETED.
++4 Cards TEST SUCCESSFULLY COMPLETED.
++1 Buys TEST FAILED!
+Council_room discarded TEST SUCCESSFULLY COMPLETED.
++1 Card other players TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+-------------     Testing village()     -------------
+Actions = 1 TEST SUCCESSFULLY COMPLETED.
++1 Card TEST FAILED!
++2 Actions TEST SUCCESSFULLY COMPLETED.
+Village discarded TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+-------------     Testing great_hall()     -------------
+Actions = 1 TEST SUCCESSFULLY COMPLETED.
++1 Card TEST SUCCESSFULLY COMPLETED.
++1 Action TEST SUCCESSFULLY COMPLETED.
++1 Point TEST FAILED!
+Great_hall discarded TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+-------------     Testing smithy()     -------------
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Deck for P2 same before and after P1 plays smithy TEST SUCCESSFULLY COMPLETED.
+Drawn card came from deck TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+-------------     Testing adventurer()     -------------
++2 Treasure TEST SUCCESSFULLY COMPLETED.
+Cards discarded TEST FAILED!
+Adventurer discarded TEST FAILED!
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+-------------     Testing steward()     -------------
++2 Cards TEST SUCCESSFULLY COMPLETED.
++2 Coins TEST SUCCESSFULLY COMPLETED.
+Trash correct cards TEST SUCCESSFULLY COMPLETED.
+Adventurer discarded TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+-------------     Testing salvager()     -------------
++1 Buys TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0 TEST FAILED!
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Hand stays the same when choice1=0  TEST SUCCESSFULLY COMPLETED.
+Trash hand position 0 extra coins TEST FAILED!
+Trash hand position 4 extra coins  TEST SUCCESSFULLY COMPLETED.
+Salvager discarded TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:34.56% of 570
+Branches executed:39.81% of 422
+Taken at least once:24.41% of 422
+Calls executed:38.38% of 99
+Creating 'dominion.c.gcov'
+

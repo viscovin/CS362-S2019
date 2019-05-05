@@ -3,8 +3,7 @@
 	CS-362-400							Assignment-3
 	
 	CARDTEST2.C: Testing Adventurer function
---------------------------------------------------------------*/
-			
+-------------------------------------------------------------*/
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
@@ -19,7 +18,7 @@
 int main (int argc, char** argv) {
 	int seed = 1000;
 	struct gameState testState;
-	int i,c, d, handNum;
+	int c, handNum;
 	int numPlayers = 2;
 	int maxHandCount=7;
 	int currentPlayertestState;

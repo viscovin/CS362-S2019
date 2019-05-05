@@ -4,7 +4,6 @@
 	
 	CARDTEST1.C: Testing Smithy function
 --------------------------------------------------------------*/			
-
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
@@ -19,10 +18,10 @@
 int main (int argc, char** argv) {
 	int seed = 1000;
 	struct gameState state, testState;
-	int c, d, handNum;
+	int c, handNum;
 	int numPlayers = 2;
 	int maxHandCount=10;
-	int currentPlayerstate, currentPlayertestState;
+	int currentPlayertestState;
 	int choice1 = 0, choice2 = 0, choice3 = 0;
 	int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};

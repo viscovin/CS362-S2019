@@ -4,7 +4,6 @@
 	
 	UNITTEST4.C: Testing great_hall function
 --------------------------------------------------------------*/
-			
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
@@ -22,7 +21,7 @@ int main (int argc, char** argv) {
 	int c, handNum;
 	int numPlayers = 2;
 	int maxHandCount=5;
-	int currentPlayertestState;
+	//int currentPlayertestState;
 	int choice1 = 0, choice2 = 0, choice3 = 0;
 	int pre,post;
 	int prePoints,postPoints;
@@ -41,7 +40,7 @@ int main (int argc, char** argv) {
     initializeGame(numPlayers, k, seed, &testState); 				// initialize a new game  
 	memcpy(testState.hand[0], controlHand, sizeof(int) * MAX_HAND); // set cards according to controlHand	
 	
-	currentPlayertestState = whoseTurn(&testState); 
+	//currentPlayertestState = whoseTurn(&testState); 
 
 	printf ("-------------     Testing great_hall()     -------------\n");
 	//------------------------     Test 1     ------------------------------------//
