@@ -727,23 +727,26 @@ int playRemodel(int currentPlayer, int choice1, int choice2, struct gameState *s
 	int j;
 	
 	j = state->hand[currentPlayer][choice1];  //store card we will trash
-
+	//printf("trash card: %d, choice: %d\n", getCost(state->hand[currentPlayer][choice1]), getCost(choice2));
     if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
 	{
+		printf("bad cost in play remodel");
 		return -1;
 	}
 
-    gainCard(choice2, state, 0, currentPlayer);
-
+    int output = gainCard(choice2, state, 0, currentPlayer);
+	//printf("gaincard result: %d\n", output);
     //discard card from hand
-    discardCard(handPos, currentPlayer, state, 0);
+    output = discardCard(handPos, currentPlayer, state, 0);
+	//printf("discardcard result: %d\n", output);
 
     //discard trashed card
     for (i = 0; i < state->handCount[currentPlayer]; i++)
 	{
 		if (state->hand[currentPlayer][i] == j)
 		{
-			discardCard(i, currentPlayer, state, 0);			
+			output = discardCard(i, currentPlayer, state, 0);		
+			printf("discardtrash result: %d\n", output);
 			break;
 		}
 	}
@@ -971,10 +974,10 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case minion:
       //+1 action
       state->numActions++;
-			
+		
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-			
+	
       if (choice1)		//+2 coins
 	{
 	  state->coins = state->coins + 2;
@@ -982,26 +985,29 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       else if (choice2)		//discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
 	{
+
 	  //discard hand
 	  while(numHandCards(state) > 0)
 	    {
 	      discardCard(handPos, currentPlayer, state, 0);
 	    }
-				
+	
 	  //draw 4
 	  for (i = 0; i < 4; i++)
 	    {
 	      drawCard(currentPlayer, state);
 	    }
-				
+	
 	  //other players discard hand and redraw if hand size > 4
 	  for (i = 0; i < state->numPlayers; i++)
 	    {
-	      if (i != currentPlayer)
+
+		  if (i != currentPlayer)
 		{
 		  if ( state->handCount[i] > 4 )
 		    {
-		      //discard hand
+		    
+			  //discard hand
 		      while( state->handCount[i] > 0 )
 			{
 			  discardCard(handPos, i, state, 0);
